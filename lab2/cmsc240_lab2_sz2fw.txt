@@ -1,0 +1,117 @@
+CMSC 240: Software Systems Development
+Lab 2 -- Pointer and References in C++
+
+Name:  YOUR NAME HERE
+
+=====================================================================
+
+Instructions: Delete (remove) any incorrect answers beneath each question.
+    For example, if the first and fourth options are correct, you answer should
+    leave those alone but delete the second and third options.
+
+Lab Exercise #1:
+----------------
+1. What changes do you notice in the before and after versions?
+
+   (a) no changes
+
+
+2. Why?  Choose best explanation for answer to #1.
+
+   (c) changeValue method uses pass-by-value parameters
+ 
+
+3. What changes do you notice now in the before and after versions?
+
+   (d) both ID and name change
+
+4. Why?  Choose best explanation for answer to #3.
+
+   (c) new method's parameters are pointer type, and dereferenced in the method
+   
+
+5. Choose best answer: code required when using pointer as parameter.
+
+   (b) parameter must be declared type*, then dereferenced; call using address
+
+6. Choose best answer: code required when using C++ reference as parameter.
+
+   (a) parameter must be declared type&
+
+
+7. Choose best answer: primary difference of pass-by-value vs. pass-by-reference
+
+   (c) pass-by-reference allows method to modify value of argument
+
+
+Lab Exercise #2:
+----------------
+8. What changes do you notice in the before and after versions?
+
+   (b) anInt changes but intPtr does not
+   
+9. Choose best answer: justification of change to anInt or not
+
+
+   (c) anInt changes because parameter is pointer type and dereferenced
+
+
+10. Choose best answer: justification of change to intPtr or not
+
+   (b) intPtr does not change b/c address in parameter is passed by value
+
+
+Lab Exercise #3:
+----------------
+11. Choose best answer: explanation for intent of program as given.
+
+   (a) allow user to modify struct data via standard input
+
+12. Choose best answer: justification for accomplishing intent or not
+
+   (d) pass-by-value parameters prohibit intent of program
+
+
+13. Choose best answer: struct pointer parameter vs. struct reference parameter
+
+   (c) if parameter is pointer, use arrow; if not pointer, use dot
+
+Lab Exercise #4:
+----------------
+14. Select all below that, based on the provided C++ class, are correct.
+
+   (e) C++ has a constructor with same name as the class, similar to Java
+   (f) C++ has a destructor named like "~classname()"; Java does not
+   (g) a C++ class method is declared in the .h header file
+   (i) a C++ class method is defined in the .cpp file
+   (j) when defined, a method name in a C++ class is preceded by "classname::"
+
+15. Choose best answer: what are the data types of variables "first" & "second"?
+
+   (e) first is pointer to Student; second is Student
+
+16. Compile error:
+
+   ProgramFour.cpp: In function ‘int main()’:
+   ProgramFour.cpp:13:18: error: type ‘class Student’ argument given to ‘delete’, expected pointer
+         delete(second);
+                     ^
+
+
+17. Choose best answer: explanation for compile error
+
+   (d) delete can be used only for dynamically allocated memory
+
+18. What changes in student info do you notice?
+
+   (a) no changes
+
+19. Explain previous answer: choose the best answer.
+
+   (c) the newly created method uses pass-by-value
+
+
+20. Explain why changes now persist: choose the best answer.
+
+   (b) the method now uses pass-by-reference
+
